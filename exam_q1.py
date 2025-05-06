@@ -14,7 +14,7 @@ class TagsBreakdown(MRJob):
             userID, movieID, tag, timestamp = line.strip().split('\t')
 
             # 1. Nombre de tags par film
-            yield ("film_tags3,moviid"),1
+            yield ("film_tags",movieID),1
 
         except Exception:
             pass
